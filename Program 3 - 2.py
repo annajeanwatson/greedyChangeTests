@@ -11,8 +11,6 @@ class Greedy:
         self.amount = amount
         self.coins = coins      
         
-        
-
     def greedy(self):
         if(self.amount < 0):
             print("Input cannot be negitive.")
@@ -32,7 +30,6 @@ class Greedy:
                 print("Coins sent into are empty.")
                 return 0
 
-
 class MyTest(unittest.TestCase):
     
     def test(self):
@@ -45,7 +42,6 @@ class MyTest(unittest.TestCase):
         """test if no coins are entered"""
         self.assertEqual(Greedy(25, [0]).greedy(), 0)
         
-
 test = MyTest()
 print("If none is returned, the test cases hold")
 print("")
